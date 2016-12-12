@@ -1,0 +1,48 @@
+module boolean (
+    input a[8],
+    input b[8],
+    input alufn[6],
+    output bool[8]
+  ) {
+  
+  var i;
+
+  always {
+    case(alufn[3:0]) {
+      b1000:                                  // AND
+        for (i = 0; i < 8; i++) {
+          if (a[i] == 1 && b[i] == 1) {
+            bool[i] = 1;
+          } else {
+            bool[i] = 0;
+          }
+        }  
+          
+      b1110:                                 // OR
+        for (i = 0; i < 8; i++) {
+          if (a[i] == 1 || b[i] == 1) {
+            bool[i] = 1;
+          } else {
+            bool[i] = 0;
+          }
+        }
+        
+     b0110:                                 // XOR
+       for (i = 0; i < 8; i++) {
+         if (a[i] == b[i]) {
+            bool[i] = 0;
+          } else {
+            bool[i] = 1;
+          }
+        }
+     
+     b1010:                                  // A
+       for (i = 0; i < 8; i++) {
+         bool[i] = a[i];
+       }
+        
+     default:
+       bool = 8h00;
+     }  
+   }
+}

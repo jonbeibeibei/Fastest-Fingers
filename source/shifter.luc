@@ -1,0 +1,16 @@
+module shifter (
+     input a[8], // what we want to shift
+     input b[8], // the number of bits we will shift
+     input alufn[6],
+     output out[8] 
+   ) {
+ 
+   always {
+     case(alufn[1:0]) {
+       b00: out = $unsigned(a) << b; // shift left hand
+       b01: out = $unsigned(a) >> b; // shft right hand
+       b11: out = $signed(a) >>> b; // shift right arithmetic
+       default: out = a;
+     }
+   }
+ } 

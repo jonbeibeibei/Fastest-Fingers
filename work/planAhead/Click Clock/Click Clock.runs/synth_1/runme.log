@@ -1,0 +1,643 @@
+
+*** Running xst
+    with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
+
+Reading design: mojo_top_0.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/shifter_27.v" into library work
+Parsing module <shifter_27>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/pipeline_12.v" into library work
+Parsing module <pipeline_12>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/compare_25.v" into library work
+Parsing module <compare_25>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/boolean_26.v" into library work
+Parsing module <boolean_26>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/adder_28.v" into library work
+Parsing module <adder_28>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/seven_seg_19.v" into library work
+Parsing module <seven_seg_19>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/pn_gen_17.v" into library work
+Parsing module <pn_gen_17>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/edge_detector_4.v" into library work
+Parsing module <edge_detector_4>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/decoder_20.v" into library work
+Parsing module <decoder_20>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/decimal_counter_24.v" into library work
+Parsing module <decimal_counter_24>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/counter_18.v" into library work
+Parsing module <counter_18>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/button_conditioner_2.v" into library work
+Parsing module <button_conditioner_2>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/alu_14.v" into library work
+Parsing module <alu_14>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/multi_seven_seg_8.v" into library work
+Parsing module <multi_seven_seg_8>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/multi_dec_ctr_10.v" into library work
+Parsing module <multi_dec_ctr_10>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/counter_11.v" into library work
+Parsing module <counter_11>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" into library work
+Parsing module <clickreg_7>.
+Analyzing Verilog file "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <reset_conditioner_1>.
+
+Elaborating module <button_conditioner_2>.
+
+Elaborating module <pipeline_12>.
+
+Elaborating module <edge_detector_4>.
+
+Elaborating module <clickreg_7>.
+
+Elaborating module <alu_14>.
+
+Elaborating module <compare_25>.
+
+Elaborating module <boolean_26>.
+
+Elaborating module <shifter_27>.
+
+Elaborating module <adder_28>.
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 39: Assignment to M_alu1_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 40: Assignment to M_alu1_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 41: Assignment to M_alu1_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 56: Assignment to M_alu2_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 57: Assignment to M_alu2_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 58: Assignment to M_alu2_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 73: Assignment to M_alu3_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 74: Assignment to M_alu3_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" Line 75: Assignment to M_alu3_n ignored, since the identifier is never used
+
+Elaborating module <pn_gen_17>.
+
+Elaborating module <multi_seven_seg_8>.
+
+Elaborating module <counter_18>.
+
+Elaborating module <seven_seg_19>.
+
+Elaborating module <decoder_20>.
+
+Elaborating module <multi_dec_ctr_10>.
+
+Elaborating module <decimal_counter_24>.
+
+Elaborating module <counter_11>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <M_state_q>.
+    Found finite state machine <FSM_0> for signal <M_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | M_reset_cond_out (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 10                                             |
+    | Power Up State     | 10                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit 4-to-1 multiplexer for signal <io_seg> created at line 173.
+    Found 4-bit 3-to-1 multiplexer for signal <io_sel> created at line 173.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 146
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 146
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 146
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 146
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 146
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 146
+    Summary:
+	inferred   9 Multiplexer(s).
+	inferred   6 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <reset_conditioner_1>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_1> synthesized.
+
+Synthesizing Unit <button_conditioner_2>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/button_conditioner_2.v".
+    Found 20-bit register for signal <M_ctr_q>.
+    Found 20-bit adder for signal <M_ctr_q[19]_GND_3_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <button_conditioner_2> synthesized.
+
+Synthesizing Unit <pipeline_12>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/pipeline_12.v".
+    Found 2-bit register for signal <M_pipe_q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pipeline_12> synthesized.
+
+Synthesizing Unit <edge_detector_4>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/edge_detector_4.v".
+    Found 1-bit register for signal <M_last_q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <edge_detector_4> synthesized.
+
+Synthesizing Unit <clickreg_7>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v".
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 34: Output port <z> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 34: Output port <v> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 34: Output port <n> of the instance <alu1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 51: Output port <z> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 51: Output port <v> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 51: Output port <n> of the instance <alu2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 68: Output port <z> of the instance <alu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 68: Output port <v> of the instance <alu3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/clickreg_7.v" line 68: Output port <n> of the instance <alu3> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <M_stt1_q>.
+    Found 8-bit register for signal <M_score_q>.
+    Found 1-bit register for signal <M_halflife_q>.
+    Found 4-bit register for signal <M_ones_q>.
+    Found 4-bit register for signal <M_tenths_q>.
+    Found 1-bit register for signal <M_stt0_q>.
+    Found 8-bit adder for signal <M_score_d> created at line 163.
+    Found 4-bit adder for signal <M_ones_q[3]_GND_6_o_add_7_OUT> created at line 164.
+    Found 32-bit comparator greater for signal <n0027> created at line 182
+    Found 32-bit comparator greater for signal <M_pn_gen_num[31]_GND_6_o_LessThan_21_o> created at line 182
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  13 Multiplexer(s).
+Unit <clickreg_7> synthesized.
+
+Synthesizing Unit <alu_14>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/alu_14.v".
+    Found 8-bit 4-to-1 multiplexer for signal <alu> created at line 86.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu_14> synthesized.
+
+Synthesizing Unit <compare_25>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/compare_25.v".
+WARNING:Xst:647 - Input <alufn<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <alufn<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit 4-to-1 multiplexer for signal <cmp> created at line 19.
+WARNING:Xst:737 - Found 1-bit latch for signal <cmp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+	inferred   1 Multiplexer(s).
+Unit <compare_25> synthesized.
+
+Synthesizing Unit <boolean_26>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/boolean_26.v".
+WARNING:Xst:647 - Input <alufn<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit comparator not equal for signal <a[0]_b[0]_equal_33_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[1]_b[1]_equal_34_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[2]_b[2]_equal_35_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[3]_b[3]_equal_36_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[4]_b[4]_equal_37_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[5]_b[5]_equal_38_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[6]_b[6]_equal_39_o> created at line 41
+    Found 1-bit comparator not equal for signal <a[7]_b[7]_equal_40_o> created at line 41
+    Summary:
+	inferred   8 Comparator(s).
+Unit <boolean_26> synthesized.
+
+Synthesizing Unit <shifter_27>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/shifter_27.v".
+WARNING:Xst:647 - Input <alufn<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit shifter logical left for signal <a[7]_b[7]_shift_left_0_OUT> created at line 20
+    Found 8-bit shifter logical right for signal <a[7]_b[7]_shift_right_1_OUT> created at line 23
+    Found 8-bit shifter arithmetic right for signal <a[7]_b[7]_shift_right_2_OUT> created at line 26
+    Found 8-bit 4-to-1 multiplexer for signal <out> created at line 18.
+    Summary:
+	inferred   4 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shifter_27> synthesized.
+
+Synthesizing Unit <adder_28>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/adder_28.v".
+WARNING:Xst:647 - Input <alufn<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit subtractor for signal <GND_20_o_a[7]_sub_4_OUT> created at line 30.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_6_OUT> created at line 40.
+    Found 9-bit adder for signal <n0042> created at line 36.
+    Found 8x8-bit multiplier for signal <n0032> created at line 27.
+    Found 8x8-bit multiplier for signal <n0034> created at line 30.
+WARNING:Xst:737 - Found 1-bit latch for signal <xb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
+	inferred   2 Multiplexer(s).
+Unit <adder_28> synthesized.
+
+Synthesizing Unit <div_8u_8u>.
+    Related source file is "".
+    Found 16-bit adder for signal <n0292> created at line 0.
+    Found 16-bit adder for signal <GND_22_o_b[7]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <n0296> created at line 0.
+    Found 15-bit adder for signal <GND_22_o_b[7]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <n0300> created at line 0.
+    Found 14-bit adder for signal <GND_22_o_b[7]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <n0304> created at line 0.
+    Found 13-bit adder for signal <GND_22_o_b[7]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <n0308> created at line 0.
+    Found 12-bit adder for signal <GND_22_o_b[7]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <n0312> created at line 0.
+    Found 11-bit adder for signal <GND_22_o_b[7]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0316> created at line 0.
+    Found 10-bit adder for signal <GND_22_o_b[7]_add_13_OUT> created at line 0.
+    Found 9-bit adder for signal <n0320> created at line 0.
+    Found 9-bit adder for signal <GND_22_o_b[7]_add_15_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  57 Multiplexer(s).
+Unit <div_8u_8u> synthesized.
+
+Synthesizing Unit <pn_gen_17>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/pn_gen_17.v".
+    Found 32-bit register for signal <M_y_q>.
+    Found 32-bit register for signal <M_z_q>.
+    Found 32-bit register for signal <M_w_q>.
+    Found 32-bit register for signal <M_x_q>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <pn_gen_17> synthesized.
+
+Synthesizing Unit <multi_seven_seg_8>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/multi_seven_seg_8.v".
+    Found 3-bit adder for signal <M_ctr_value[0]_GND_25_o_add_0_OUT> created at line 48.
+    Found 15-bit shifter logical right for signal <n0010> created at line 48
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <multi_seven_seg_8> synthesized.
+
+Synthesizing Unit <counter_18>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/counter_18.v".
+    Found 17-bit register for signal <M_ctr_q>.
+    Found 17-bit adder for signal <M_ctr_q[16]_GND_26_o_add_0_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <counter_18> synthesized.
+
+Synthesizing Unit <seven_seg_19>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/seven_seg_19.v".
+    Found 16x7-bit Read Only RAM for signal <segs>
+    Summary:
+	inferred   1 RAM(s).
+Unit <seven_seg_19> synthesized.
+
+Synthesizing Unit <decoder_20>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/decoder_20.v".
+    Summary:
+	no macro.
+Unit <decoder_20> synthesized.
+
+Synthesizing Unit <multi_dec_ctr_10>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/multi_dec_ctr_10.v".
+INFO:Xst:3210 - "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/multi_dec_ctr_10.v" line 30: Output port <ovf> of the instance <dctr_gen_0[1].dctr> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <multi_dec_ctr_10> synthesized.
+
+Synthesizing Unit <decimal_counter_24>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/decimal_counter_24.v".
+    Found 4-bit register for signal <M_counter_q>.
+    Found 4-bit register for signal <M_val_q>.
+    Found 4-bit subtractor for signal <M_counter_q[3]_GND_30_o_sub_3_OUT> created at line 31.
+    Found 4-bit subtractor for signal <M_val_q[3]_GND_30_o_sub_4_OUT> created at line 33.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <decimal_counter_24> synthesized.
+
+Synthesizing Unit <counter_11>.
+    Related source file is "C:/Users/jbz_1/OneDrive/Documents/mojo/Click Clock/work/planAhead/Click Clock/Click Clock.srcs/sources_1/imports/verilog/counter_11.v".
+    Found 23-bit register for signal <M_ctr_q>.
+    Found 23-bit adder for signal <M_ctr_d> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+Unit <counter_11> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 2
+# Multipliers                                          : 6
+ 8x8-bit multiplier                                    : 6
+# Adders/Subtractors                                   : 69
+ 10-bit adder                                          : 6
+ 11-bit adder                                          : 6
+ 12-bit adder                                          : 6
+ 13-bit adder                                          : 6
+ 14-bit adder                                          : 6
+ 15-bit adder                                          : 6
+ 16-bit adder                                          : 6
+ 17-bit adder                                          : 2
+ 20-bit adder                                          : 4
+ 23-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 4
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 6
+ 9-bit addsub                                          : 3
+ 9-bit subtractor                                      : 3
+# Registers                                            : 31
+ 1-bit register                                        : 8
+ 17-bit register                                       : 2
+ 2-bit register                                        : 4
+ 20-bit register                                       : 4
+ 23-bit register                                       : 1
+ 32-bit register                                       : 4
+ 4-bit register                                        : 7
+ 8-bit register                                        : 1
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+# Comparators                                          : 53
+ 1-bit comparator not equal                            : 24
+ 10-bit comparator lessequal                           : 3
+ 11-bit comparator lessequal                           : 3
+ 12-bit comparator lessequal                           : 3
+ 13-bit comparator lessequal                           : 3
+ 14-bit comparator lessequal                           : 3
+ 15-bit comparator lessequal                           : 3
+ 16-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 2
+ 8-bit comparator lessequal                            : 3
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 220
+ 1-bit 2-to-1 multiplexer                              : 185
+ 24-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 8
+ 4-bit 3-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 14
+ 8-bit 4-to-1 multiplexer                              : 10
+# Logic shifters                                       : 11
+ 15-bit shifter logical right                          : 2
+ 8-bit shifter arithmetic right                        : 3
+ 8-bit shifter logical left                            : 3
+ 8-bit shifter logical right                           : 3
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 3
+ 32-bit xor2                                           : 2
+ 32-bit xor4                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <adder_28>.
+	Multiplier <Mmult_n0034> in block <adder_28> and adder/subtractor <Msub_GND_20_o_a[7]_sub_4_OUT_Madd> in block <adder_28> are combined into a MAC<Maddsub_n0034>.
+Unit <adder_28> synthesized (advanced).
+
+Synthesizing (advanced) Unit <button_conditioner_2>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <button_conditioner_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clickreg_7>.
+The following registers are absorbed into counter <M_score_q>: 1 register on signal <M_score_q>.
+Unit <clickreg_7> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_11>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_11> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_18>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_18> synthesized (advanced).
+
+Synthesizing (advanced) Unit <decimal_counter_24>.
+The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
+The following registers are absorbed into counter <M_val_q>: 1 register on signal <M_val_q>.
+Unit <decimal_counter_24> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_seg_19>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <char>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segs>          |          |
+    -----------------------------------------------------------------------
+Unit <seven_seg_19> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 2
+# MACs                                                 : 3
+ 8x8-to-8-bit MAC                                      : 3
+# Multipliers                                          : 3
+ 8x8-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 30
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 1
+ 8-bit adder carry in                                  : 24
+ 9-bit addsub                                          : 3
+# Counters                                             : 12
+ 17-bit up counter                                     : 2
+ 20-bit up counter                                     : 4
+ 23-bit up counter                                     : 1
+ 4-bit down counter                                    : 4
+ 8-bit up counter                                      : 1
+# Registers                                            : 156
+ Flip-Flops                                            : 156
+# Comparators                                          : 53
+ 1-bit comparator not equal                            : 24
+ 10-bit comparator lessequal                           : 3
+ 11-bit comparator lessequal                           : 3
+ 12-bit comparator lessequal                           : 3
+ 13-bit comparator lessequal                           : 3
+ 14-bit comparator lessequal                           : 3
+ 15-bit comparator lessequal                           : 3
+ 16-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 2
+ 8-bit comparator lessequal                            : 3
+ 9-bit comparator lessequal                            : 3
+# Multiplexers                                         : 218
+ 1-bit 2-to-1 multiplexer                              : 185
+ 24-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 3-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 14
+ 8-bit 4-to-1 multiplexer                              : 10
+# Logic shifters                                       : 11
+ 15-bit shifter logical right                          : 2
+ 8-bit shifter arithmetic right                        : 3
+ 8-bit shifter logical left                            : 3
+ 8-bit shifter logical right                           : 3
+# FSMs                                                 : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 3
+ 32-bit xor2                                           : 2
+ 32-bit xor4                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <cmp_6> (without init value) has a constant value of 0 in block <compare_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <alu2/add/xb> is equivalent to a wire in block <clickreg_7>.
+WARNING:Xst:1294 - Latch <alu3/add/xb> is equivalent to a wire in block <clickreg_7>.
+WARNING:Xst:1294 - Latch <alu1/add/xb> is equivalent to a wire in block <clickreg_7>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 10    | 10
+ 01    | 01
+ 00    | 00
+-------------------
+
+Optimizing unit <mojo_top_0> ...
+
+Optimizing unit <clickreg_7> ...
+
+Optimizing unit <pn_gen_17> ...
+
+Optimizing unit <div_8u_8u> ...
+INFO:Xst:2261 - The FF/Latch <ctr/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_score/ctr/M_ctr_q_16> <seg/ctr/M_ctr_q_16> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_0> <ctr/M_ctr_q_0> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_1> <ctr/M_ctr_q_1> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_2> <ctr/M_ctr_q_2> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_3> <ctr/M_ctr_q_3> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_4> <ctr/M_ctr_q_4> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_5> <ctr/M_ctr_q_5> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_6> <ctr/M_ctr_q_6> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_7> <ctr/M_ctr_q_7> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_8> <ctr/M_ctr_q_8> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_9> <ctr/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_10> <ctr/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_11> <ctr/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_12> <ctr/M_ctr_q_12> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_13> <ctr/M_ctr_q_13> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_14> <ctr/M_ctr_q_14> 
+INFO:Xst:2261 - The FF/Latch <seg_score/ctr/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <seg/ctr/M_ctr_q_15> <ctr/M_ctr_q_15> 
+INFO:Xst:3203 - The FF/Latch <dec_ctr/dctr_gen_0[1].dctr/M_val_q_0> in Unit <mojo_top_0> is the opposite to the following FF/Latch, which will be removed : <dec_ctr/dctr_gen_0[0].dctr/M_counter_q_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 8.
+FlipFlop click/M_stt0_q has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+	Found 2-bit shift register for signal <button_condAA/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <button_condBB/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <click/button_condB/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <click/button_condA/sync/M_pipe_q_1>.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 273
+ Flip-Flops                                            : 273
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 281   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.781ns (Maximum Frequency: 172.980MHz)
+   Minimum input arrival time before clock: 3.526ns
+   Maximum output required time after clock: 9.380ns
+   Maximum combinational path delay: 6.154ns
+
+=========================================================================

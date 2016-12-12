@@ -1,0 +1,17 @@
+NET "ledA" LOC = P57;
+NET "ledA" IOSTANDARD = LVTTL;
+NET "buttonA" LOC = P66;
+NET "buttonA" IOSTANDARD = LVTTL;
+NET "buttonA" PULLUP;
+NET "led0" LOC = P74;
+NET "led0" IOSTANDARD = LVTTL;
+NET "led1" LOC = P114;
+NET "led1" IOSTANDARD = LVTTL;
+NET "buttonB" LOC = P118;
+NET "buttonB" IOSTANDARD = LVTTL;
+NET "buttonB" PULLUP;
+NET "ledB" LOC = P120;
+NET "ledB" IOSTANDARD = LVTTL;
+NET "reset" LOC = P92;
+NET "reset" IOSTANDARD = LVTTL;
+NET "reset" PULLUP;

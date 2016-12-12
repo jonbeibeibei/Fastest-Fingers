@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="par" Owner="jbz_1" Host="DESKTOP-LO92V4O" Pid="9612">
+    </Process>
+</ProcessHandle>

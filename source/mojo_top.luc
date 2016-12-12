@@ -1,0 +1,139 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full
+    output io_led [3][8],   // LEDs on IO Shield
+    output io_seg [8],      // 7-segment LEDs on IO Shield
+    output io_sel [4],      // Digit select on IO Shield
+    input io_button [5],    // 5 buttons on IO Shield
+    input io_dip [3][8],     // DIP switches on IO Shield
+    input reset,
+    input buttonA,
+    input buttonB,
+    output led1,
+    output led0,
+    output ledA,
+    output ledB
+    
+  ) {
+  
+  sig rst;                  // reset signal
+  sig timer[4];
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+    button_conditioner button_condAA;
+    button_conditioner button_condBB;
+    edge_detector edge_detectorAA(#RISE(1), #FALL(0));
+    edge_detector edge_detectorBB(#RISE(1), #FALL(0));
+    
+    edge_detector edge_detector (#RISE(1), #FALL(0));
+    .rst(rst){
+    
+      fsm state(.clk(clk), #INIT(START)) = {RNG,GAMEEND,START};
+      clickreg click;
+      multi_seven_seg seg;
+      multi_seven_seg seg_score;
+      multi_dec_ctr dec_ctr;
+      counter ctr (#SIZE(1), #DIV(22));
+      //dff gg(#INIT(0));
+    }
+  }
+  
+  always {
+    reset_cond.in = ~reset; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    io_led = 3x{{8h00}};    // turn LEDs off
+  //  io_seg = 8hff;          // turn segments off
+  //  io_sel = 4hf;           // select no digits
+    
+    edge_detector.in = ctr.value;
+    dec_ctr.inc = 0;
+    seg.values = dec_ctr.digits;
+    seg_score.values = {4h0, 4h0};
+    
+    io_seg = 4h0; // connect segments to the driver
+    io_sel = 4h0; // connect digit select to the driver
+    
+    click.buttonA = ~buttonA;
+    click.buttonB = ~buttonB;
+    //click.end = gg.q;
+    led0 = click.state0;
+    led1 = click.state1;
+    ledA = !buttonA;
+    ledB = !buttonB;
+    
+    button_condAA.in = buttonA;
+    button_condBB.in = buttonB;
+    edge_detectorAA.in = button_condAA.out;
+    edge_detectorBB.in = button_condBB.out;
+    
+   
+    
+    case(state.q){
+    
+      state.START: 
+     
+        seg_score.values = {4h0,4h0}; // Start state all numbers are 0 for 7-seg LEDs
+        led = 8hFF;
+        io_seg = ~seg_score.seg; // connect segments to the driver
+        io_sel = 4h0; // connect digit select to the driver        
+        
+        if (edge_detectorAA.out | edge_detectorBB.out){
+          state.d = state.RNG;
+        }
+        
+      state.RNG:
+       
+        dec_ctr.inc = edge_detector.out;
+        io_seg = ~seg.seg; // connect segments to the driver
+        io_sel = ~seg.sel; // connect digit select to the driver
+        
+        led = click.scoreout;
+        io_led[0] = click.try;
+        
+    //    io_led = io_dip;   // connect the DIP switches to the LEDs
+        timer = dec_ctr.timer[0];
+        
+        if (timer == 0) {
+          // rst = 1;
+          state.d = state.GAMEEND;
+        }
+        
+        if (click.life == 0){
+          state.d = state.GAMEEND;
+        }
+        
+      state.GAMEEND: 
+        seg_score.values = {click.ten, click.one}; // Score needs to be displayed here, just a placeholder for now
+        led = 8hFF;
+        io_seg = ~seg_score.seg; // connect segments to the driver
+        io_sel = ~seg_score.sel; // connect digit select to the driver
+        //gg.d = 1;
+        led0 = 0;
+        led1 = 0;
+        click.buttonA = 0;
+        click.buttonB = 0;
+        ledA = 0;
+        ledB = 0;
+      
+    }
+   }
+ }

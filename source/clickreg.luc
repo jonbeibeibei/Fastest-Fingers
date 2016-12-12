@@ -1,0 +1,121 @@
+module clickreg (
+    input clk,  // clock
+    input rst,  // reset
+    input buttonA,
+    input buttonB,
+    //input end,
+    output state0,
+    output state1,
+    output scoreout[8],
+    output try[8],
+    output life,
+    output one[4],
+    output ten[4]
+  ) {
+  
+  sig bool;
+  sig rng[32];
+  alu alu1;
+  alu alu2;
+  alu alu3;
+  
+  .clk(clk) {
+  button_conditioner button_condA;   //button conditioner to fix presses
+  button_conditioner button_condB;   //button conditioner to fix presses
+    edge_detector edge_detectorA(#RISE(1), #FALL(0)); // detect rising edges
+    edge_detector edge_detectorB(#RISE(1), #FALL(0));
+     
+    .rst(rst) {
+       dff stt0; // our lovely counter
+       dff stt1; // our lovely counter
+       dff score[8];
+       pn_gen pn_gen;
+       dff halflife(#INIT(1));
+       dff ones[4](#INIT(0));
+       dff tenths[4](#INIT(0));
+       
+    }
+    
+  }
+
+  always {
+  bool = stt0.q || stt1.q ;
+  pn_gen.next = !bool;
+  scoreout = score.q;
+  button_condA.in = buttonA;
+  button_condB.in = buttonB;
+    edge_detectorA.in = button_condA.out; // input to the edge_detector
+    edge_detectorB.in = button_condB.out;
+    state0 = stt0.q;             // output the counter
+    state1 = stt1.q; 
+    life = halflife.q;
+    one = ones.q;
+    ten = tenths.q;
+    
+    rng = pn_gen.num;
+    
+    alu1.a = 0;
+    alu1.b = 0;
+    alu1.alufn = b000000;
+    alu2.alufn = b011000;
+    alu2.a = ones.q;
+    alu2.b = 10;
+    alu3.alufn = b110011;
+    alu3.a = alu2.alu;
+    alu3.b = b00001010;
+    
+    if (alu3.alu == 8b00000001) {
+      ones.d = 0;
+      alu1.a = tenths.q;
+      alu1.b = 1;
+      tenths.d = alu1.alu[3:0];
+      //tenths.d = tenths.q + 1;
+    }
+    
+    if (edge_detectorA.out)  {   // if edge detected
+      if (stt0.q == 1) {
+        stt0.d = 0;
+        state0 = 0;
+        score.d = score.q + 1;
+        ones.d = ones.q + 1;
+      } else {
+        score.d = 0;
+        halflife.d = 0;
+      }
+    }
+  
+    if (edge_detectorB.out) {    // if edge detected
+      if (stt1.q == 1) {
+        stt1.d = 0;
+        state1 = 0;
+        score.d = score.q + 1;
+        ones.d = ones.q + 1;
+      } else {
+        score.d = 0;
+        halflife.d = 0;
+      }
+    }
+    
+    
+    //rng = pn_gen.num;    
+    
+    try = pn_gen.num[7:0];
+    
+    if (rng >= 300 && rng < 600) {  
+      stt1.d = 1;
+      state1 = 1;
+    }
+    
+    
+    
+    if (rng < 300) {
+      stt0.d = 1;
+      state0 = 1;
+    }
+    
+    
+    //pn_gen.next = 1;                   // keep generating numbers
+    pn_gen.seed = rng;                   // don't really care about the seed
+  //  led[pn_gen.num-(pn_gen.num/2*2)] = 1;                          // turn off the LEDs
+  }
+}
